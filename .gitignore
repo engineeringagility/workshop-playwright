@@ -1,0 +1,35 @@
+node_modules/
+
+# coverage
+coverage/
+
+# IDE
+.idea
+.vscode/*
+!.vscode/launch.json
+.history/
+**.code-workspace
+.tmp/
+
+# local configs
+*.local
+**/tsconfig.tsbuildinfo
+
+# misc
+.DS_Store
+
+# builds
+dist/
+lib/
+playwright/
+playwright-report/
+screenshots/
+test-results/
+
+.env
+
+# ignore playwright storage data since it is session specific
+playwright.user.json
+
+# config for local graphql tools
+.graphqlconfig
