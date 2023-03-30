@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cash/8.1.4/cash.min.js"></script>
+    <script>
+        $( function() {
+            $( "#btn" ).on( "click", () => {
+                setTimeout( () => {
+                    $( "#message" ).html( "done" )
+                }, 1000 )
+            } )
+        } )
+    </script>
+</head>
+<body>
+    <main>
+        <nav>
+            <a href="/">Home</a>
+        </nav>
+        <button id="btn">change</button>
+        <span id="message" role="status">waiting...</span>
+    </main>
+</body>
+</html>
